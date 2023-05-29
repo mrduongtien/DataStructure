@@ -1,0 +1,83 @@
+
+============================== I. Tổng Quan ==============================
+
+- Kí hiệu big-O được sử dụng biểu thị cho độ phức tạp của thuật toán. Nó đưa ra giới hạn trên về độ phức tạp do đó biểu thị hiệu suất trong trường hợp xấu nhất của thuật toán. Viết là O(f).
+
+
+ Các loại Big-0
+----------------------
+ 1. Độ phức tạp hằng số					// O(1).
+ 2. Độ phức tạp tuyến tính 				// O(n).
+ 3. Độ phức tạp logarit 					// O(logn).
+ 4. Độ phức tạp loga-tuyến tính			// O(nlogn).
+ 5. Độ phức tạp bình phương 				// O(n^2).
+
+ Thứ tự:
+-------------
+ O(1) < O(logn) < O(√n) < O(n) < O(nlogn) < O(n^2) < O(n^3) < O(2^n) < O(10^n) < O(n!).
+
+
+ Cách xác định độ phức tạp thuật toán:
+----------------------------------------------------
+	if (loop || dequy) {
+		count=?
+	} else {
+		0(1)
+	}
+
+=====================================================================
+
+
+
+==================== II. Một số độ phức tạp của các giải thuật ====================
+
+--------------------------------------------------------- 1. Sắp xếp -------------------------------------------------------
+
+STT	Thuật toán			Tốt nhất	Xấu nhất	Bộ nhớ	Stable
+1	Bubble Sort			O(n)		O(n²)		O(1)		Có
+2	Shaker Sort			O(n)		O(n²)		O(1)		Có
+3	Selection Sort		O(n²)		O(n²)		O(1)		Không
+4	Insertion Sort		O(n)		O(n²)		O(1)		Có
+5	Binary Insertion Sort	O(n)		O(n²)		O(1)		Có
+6	Shell Sort			O(nlogn)	O(n2) 	O(1)		Không
+7	Heap Sort			O(nlogn)	O(nlogn)	O(1)		Không
+8	Merge Sort			O(nlogn)	O(nlogn)	O(n)		Có
+9	Quick Sort			O(nlogn)	O(n²)		O(logn)	Có/Không
+10	Counting Sort		O(n+k)	O(n + k)	O(n + k)	Có
+11	Radix Sort			O(kn)		O(nk)		O(n + k)	Có
+12	Flash Sort			O(n)		O(n²)		O(m)		Không
+
+Nhận xét:
+======
+Với kích thước dữ liệu đầu vào nhỏ(3000) nhìn chung tốc độ chênh lệch của các thuật toán là không rõ để nhận thấy.
+
+ Với mảng đã được sắp xếp, thì Bubble Sort và Shaker Sort cho tốc độ nhanh nhất do chi phí để biết được đây là mảng có thứ tự của 2 thuật toán trên là O(n).
+
+ Với mảng gần như đã được sắp xếp thì Insertion Sort và Binary Insertion Sort là những sự lựa chọn tốt nhất do số phép hoán đổi phải thực hiện ít.
+
+ Selection Sort cho tốc độ khá chậm trong đa số trường hợp do độ phức tạp luôn là O(n2), do đó Selection Sort chỉ nên dùng cho các trường hợp số lượng phần tử cần sắp xếp không quá nhiều.
+
+Với mảng gần như đã được sắp xếp thì Shaker Sort cho tốc độ nhanh hơn đáng kể so với Bubble Sort, do thu hẹp được khoảng phải duyệt tiếp theo sau khi duyệt.
+
+ Shell Sort, Heap Sort, Merge Sort và Quick Sort có tốc độ ổn định xuyên suốt cả 4 loại dữ liệu đầu vào.
+
+ Flash Sort(được phát minh bởi Karl-Dietrich Neubert vào năm 1998) là một thuật toán cho tốc độ nhanh(thậm chí nhanh hơn cả Quick Sort) và tiêu tốn rất ít bộ nhớ.
+
+ Counting Sort và Radix Sort là những thuật toán cho tốc độ nhanh, tuy nhiên cần đánh đổi bằng cách sử dụng thêm bộ nhớ.
+
+Quick Sort sẽ là tốt nhất nếu ...
+a. Không lo lắng về các case đầu vào kể cả trường hợp xấu nhất (trật tự nói chung là ngẫu nhiên)
+b. Không quan tâm đến dung lượng bộ nhớ, bộ nhớ là hoàn toàn lý tưởng và phù hợp ở đây
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------- 2. Tìm Kiếm -------------------------------------------------------
+
+STT	Thuật toán			Xấu nhất		Bộ nhớ	
+1	Linear Search		O(n)			O(1)		
+2	Binary Search		O(log[n])		O(1)		// cơ số 2		
+3	Ternary Search		O(log[n])		O(1)		// cơ số 3 	- find max/min	
+4	Jump Search			O(log[sqrt(n)])	O(1)		
+5	Exponential Search		O(log[i])		O(1)	
+--------------------------------------------------------------------------------------------------------------------------------
+=====================================================================

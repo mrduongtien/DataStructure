@@ -1,0 +1,59 @@
+
+========================== I. Cấu trúc dữ liệu  là gì ==========================
+
+- Cấu trúc dữ liệu là cách tổ chức, lưu trữ dữ liệu để việc sử dụng nó đạt hiệu quả cao nhất
+
+- Tên cấu trúc dữ liệu chỉ ra cách thức nó tổ chức dữ liệu trong bộ nhớ.
+
+- Cấu trúc dữ liệu không phải là bất cứ ngôn ngữ lập trình nào, mà nó là tập hợp các thuật toán tử đó ta có thể sử dụng trong bất cứ ngôn ngữ nào nhằm xây dựng cấu trúc dữ liệu trong bộ nhớ.
+
+- Abstract data types là tập hợp các quy tắc để tổ chức dữ liệu (dịch ra là các kiểu dữ liệu trừu tượng)
+
+- Có hai kiểu cấu trúc dữ liệu: nguyên thủy và dẫn xuất
+
+ Kiểu cấu trúc dữ liệu nguyên thủy là các dữ liệu nguyên thủy: int, float, double, char, ... chúng có thể lưu trữ các giá trị đơn
+
+ Kiểu dữ liệu dẫn xuất gồm cấu trúc dữ liệu tuyến tính và phi tuyến tính
+
+	 Kiểu tuyến tính: mảng, danh sách liên kết, stack, queue
+	 Kiểu phi tuyến tính: cây, bảng băm đồ thị
+
+LỢI ÍCH
+-----------
+ Tính hiệu quả: 			// không gian (bộ nhớ) và thời gian (tốc độ)
+
+ Tính tái sử dụng			
+
+ Tính trừu tượng
+=====================================================================
+
+
+
+============================ II. Giải thuật là gì ===========================
+
+- Theo ngôn ngữ lập trình máy tính, thuật toán là một tập hợp các hướng dẫn được xác định rõ ràng để giải quyến một vấn đề cụ thể. Nó cần một tập hợp các đầu vào và tạo ra đầu ra mong muốn.
+
+ Đặc điểm của một thuật toán tốt:
+---------------------------------------------
+	 1. Đầu vào và đầu ra phải được xác định chính xác
+
+	 2. Các bước trong thuật toán phải rõ ràng, rành mạch
+
+	 3. Thuật toán nên là cách giải quyết hiệu quả nhất trong số các cách cùng được sử dụng để giải quyết một vấn đề
+
+	 4. Một thuật toán không nên chứa các đoạn mã máy tính. Thay vào đó nên được viết theo cách sao cho có thể được sử dụng trong các ngôn ngữ lập trình khác nhau.
+
+=====================================================================
+
+
+
+========================= II. Độ phức tạp thuật toán ========================
+
+ Là thước đo lượng thời gian mà một thuật toán để xử lý trong một bài toán với đầu vào kích thước n
+
+ Độ phức tạp thuật toán được tính theo tiệm cận khi n tiến đến vô cùng
+
+ Phân tích độ phức tạp thuật toán hữu ích khi so sánh các thuật toán với nhau hoặc khi tìm kiếm các cải tiến của thuật toán.
+
+ Độ phức tạp của thuật toán còn được gọi là độ phức tạp hoặc thời gian chạy.
+=====================================================================
